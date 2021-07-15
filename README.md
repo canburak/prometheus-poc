@@ -1,6 +1,6 @@
 # Motivation
 
-This is a proof of concept setup that can monitors a website.
+This is a proof of concept setup that can monitor a website.
 
 Infrastructure consists of:
 
@@ -11,7 +11,7 @@ Infrastructure consists of:
 # How to use
 
 1. Install [Docker Desktop](https://www.docker.com/products/docker-desktop)
-1. `docker compose up`
+1. `docker-compose up`
 1. Visit [Grafana](http://localhost:3000/explore?orgId=1&left=%5B%22now-5m%22,%22now%22,%22Prometheus%22,%7B%22exemplar%22:true,%22expr%22:%22probe_duration_seconds%22,%22hide%22:false%7D%5D) and login with `admin:grafana`. This should render you the `probe_duration_seconds`.
 
 

@@ -1,12 +1,11 @@
 name: Test
 on:
-  workflow_dispatch:
   push:
   schedule:
     - cron:  '45 14 * * *'
 jobs:
   test:
-    runs-on: self-hosted
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v2
